@@ -3,7 +3,7 @@
 // Regular Promise:
 function fetchData() {
     return new Promise((resolve, reject) => {
-        setTimeout(() => reject(new Error("Failed to load data!")), 2000);
+        setTimeout(() => resolve(new Error("Failed to load data!")), 2000);
     });
 }
 
